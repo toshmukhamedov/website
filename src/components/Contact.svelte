@@ -10,7 +10,7 @@
 	<h2 class="mb-4 text-lg">Contact</h2>
 	<ul class="gap-2">
 		<li class="flex items-center gap-1 font-thin">
-			<HugeiconsIcon icon={MailIcon} />
+			<HugeiconsIcon icon={MailIcon} size={20} />
 			<a href="mailto:{mail}" class="hover:underline">{mail}</a>
 		</li>
 	</ul>

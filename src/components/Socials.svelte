@@ -32,7 +32,7 @@
 	<ul>
 		{#each socials as social, i (i)}
 			<li class="my-2 flex items-center gap-1 font-thin">
-				<HugeiconsIcon icon={social.icon} />
+				<HugeiconsIcon icon={social.icon} size={20} />
 				<a href={social.url} class="hover:underline" target="_blank">{social.title}</a>
 			</li>
 		{/each}
