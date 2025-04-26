@@ -1,6 +1,11 @@
 <script lang="ts">
 	import AboutMe from './AboutMe.svelte';
 	import Card from './Card.svelte';
+	let isMemojiLoaded = $state(false);
+
+	const onMemojiLoad = () => {
+		isMemojiLoaded = true;
+	};
 </script>
 
 <Card>
@@ -11,7 +16,14 @@
 			<AboutMe />
 		</div>
 		<div class="w-2/5">
-			<enhanced:img alt="memoji" src="../lib/assets/memoji.png"></enhanced:img>
+			<enhanced:img
+				onload={onMemojiLoad}
+				class="transition-opacity duration-500 ease-in-out"
+				class:opacity-0={!isMemojiLoaded}
+				class:opacity-100={isMemojiLoaded}
+				alt="memoji"
+				src="../lib/assets/memoji.png"
+			></enhanced:img>
 		</div>
 	</div>
 </Card>
