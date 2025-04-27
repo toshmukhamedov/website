@@ -2,6 +2,8 @@
 	import Card from './Card.svelte';
 	import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/svelte';
 	import { GithubIcon, LinkedinIcon, DiscordIcon } from '@hugeicons/core-free-icons';
+	import { onMount } from 'svelte';
+	let iconsVisible = $state(false);
 
 	type Social = {
 		icon: IconSvgElement;
@@ -25,14 +27,26 @@
 			url: 'https://discord.gg/8jAehcAk'
 		}
 	];
+
+	onMount(() => {
+		setTimeout(() => {
+			iconsVisible = true;
+		}, 100);
+	});
 </script>
 
 <Card>
-	<h2 class="mb-4 text-lg">Socials</h2>
+	<h2 class="mb-2 text-sm lg:mb-4 lg:text-lg">Socials</h2>
 	<ul>
 		{#each socials as social, i (i)}
-			<li class="my-2 flex items-center gap-1 font-thin">
-				<HugeiconsIcon icon={social.icon} size={20} />
+			<li class="my-2 flex items-center gap-1 text-xs font-thin md:gap-1.5 lg:text-base">
+				<div
+					class="transition-opacity duration-300"
+					class:opacity-0={!iconsVisible}
+					class:opacity-100={iconsVisible}
+				>
+					<HugeiconsIcon icon={social.icon} size={20} />
+				</div>
 				<a href={social.url} class="hover:underline" target="_blank">{social.title}</a>
 			</li>
 		{/each}

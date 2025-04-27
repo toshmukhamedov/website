@@ -1,4 +1,4 @@
-<p class="text-sm font-thin">
+<p class="text-xs font-thin lg:text-sm">
 	I’m <b>Abdugani Toshmukhamedov</b>, a software engineer from Uzbekistan who enjoys contributing
 	open-source projects.<br />
 	<br />
