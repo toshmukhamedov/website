@@ -17,7 +17,7 @@
 <Card>
 	<h2 class="mb-2 text-sm md:mb-4 lg:text-lg">Contact</h2>
 	<ul class="gap-1 md:gap-2">
-		<li class="lg:font-base flex items-center gap-1 text-xs font-thin md:gap-1.5">
+		<li class="flex items-center gap-1 text-xs font-thin md:gap-1.5 lg:text-base">
 			<div
 				class="transition-opacity duration-300"
 				class:opacity-0={!iconsVisible}
