@@ -8,8 +8,8 @@
 	<div class="xl:w-2/3">
 		<Welcome />
 	</div>
-	<div class="flex flex-col gap-4 md:gap-5 xl:w-1/3">
-		<Contact />
+	<div class="flex flex-col gap-4 sm:flex-row md:gap-5 xl:w-1/3 xl:flex-col">
 		<Socials />
+		<Contact />
 	</div>
 </div>

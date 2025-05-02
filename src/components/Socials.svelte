@@ -36,10 +36,10 @@
 </script>
 
 <Card>
-	<h2 class="mb-2 text-sm lg:mb-4 lg:text-lg">Socials</h2>
+	<h2 class="mb-2 text-base lg:mb-4 lg:text-lg">Socials</h2>
 	<ul>
 		{#each socials as social, i (i)}
-			<li class="my-2 flex items-center gap-1 text-xs font-thin md:gap-1.5 lg:text-base">
+			<li class="my-2 flex items-center gap-1 text-base font-thin md:gap-1.5">
 				<div
 					class="transition-opacity duration-300"
 					class:opacity-0={!iconsVisible}

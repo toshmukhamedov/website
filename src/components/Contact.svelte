@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 
 	let iconsVisible = $state(false);
-	const mail = 'a.toshmukhamedov@icould.com';
+	const mail = 'me@abdugani.uz';
 
 	onMount(() => {
 		setTimeout(() => {
@@ -15,9 +15,9 @@
 </script>
 
 <Card>
-	<h2 class="mb-2 text-sm md:mb-4 lg:text-lg">Contact</h2>
+	<h2 class="mb-2 text-base md:mb-4 lg:text-lg">Contact</h2>
 	<ul class="gap-1 md:gap-2">
-		<li class="flex items-center gap-1 text-xs font-thin md:gap-1.5 lg:text-base">
+		<li class="flex items-center gap-1 text-base font-thin md:gap-1.5">
 			<div
 				class="transition-opacity duration-300"
 				class:opacity-0={!iconsVisible}

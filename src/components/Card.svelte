@@ -5,6 +5,7 @@
 <div
 	class="
 	  card
+	  flex-1
 	  rounded-lg
 	  border
 	  border-neutral-800

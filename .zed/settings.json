@@ -14,5 +14,7 @@
 				"source.fixAll.eslint": true
 			}
 		}
-	}
+	},
+	"tab_size": 2,
+	"hard_tabs": true
 }
